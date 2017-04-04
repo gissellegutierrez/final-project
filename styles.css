@@ -1,0 +1,11 @@
+#intro {
+    text-align:center;
+}
+
+.main {
+    position: absolute;
+    top:60%;
+    width:40%;
+    height:10%;
+    text-align:center;
+}
