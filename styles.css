@@ -9,3 +9,19 @@
     height:10%;
     text-align:center;
 }
+
+.hey {
+    text-align:center;
+}
+
+#three {
+    font-size:22px;
+    position:relative;
+    margin:0 auto;
+    padding-top:2%;
+    padding-bottom:4%;
+}
+
+#results li{
+    list-style-type:none;
+}

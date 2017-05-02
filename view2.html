@@ -2,9 +2,12 @@
 <html>
     
     <head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation-flex.css" type="text/css" />
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.js"></script>
     <link rel="stylesheet" href="styles.css" type="text/css" />
+    <script type="text/javascript" src="script.js"></script>
+    
 
 </head>
     
@@ -13,7 +16,7 @@
              <div class="top-bar">
             <div class="top-bar-right">
                 <ul class="dropdown menu">
-                    <li class="menu-text">Findng Colleges</li>
+                    <li class="menu-text">Finding Colleges</li>
                 </ul>
             </div>
         </header>
@@ -21,21 +24,44 @@
         <main>
             <form>
                 <h1>Sat Scores</h1>
-                <label>High
+                <label>High (1,290-1,600)
                 <input type="checkbox" name="High"/>
                 
                 </label>
-                <label>Med
+                <label>Med (1,010-1,190)
                 <input type="checkbox" name="High"/>
                 
                 </label>
                 
-                <label>Low
+                <label>Low (400-960)
                 <input type="checkbox" name="High"/>
                 
                 </label>
+                <h2> Offers</h2> 
+                <label>PhD
+                <input type="checkbox"id="phd" name="High"/>
+                
+                </label>
+                <label>Masters 
+                <input type="checkbox"id="masters" name="High"/>
+                
+                </label>
+                
+                <h3> Location</h3>
+                <label> In state
+                <input type="checkbox" name="High"/>
+                </label>
+                
+                <label> Out of state
+                <input type="checkbox" name="High"/>
+                </label>
+            
+                
+                
                 
             </form>    
+            
+            <p id="start">Start</p>
             
         </main>
         
