@@ -3,16 +3,24 @@
 $(function(){
      $("#start").click(function () {
      console.log('hello')
-     var offers = $("#phd").val();
-     
-     console.log(offers)
+     checkPhdStatus() 
+     checkMasterStatus()
+     callAPI()
  });
-     
- 
-//  /* $.getJSON(
+ function checkPhdStatus(){
+  var selectedPhd = $("#phd").is(":checked");
+     console.log(selectedPhd)   
+ }    
+ function checkMasterStatus(){
+     var selectedMaster = $("#masters").is(":checked");
+     console.log(selectedMaster)
+ }
+ function callAPI(){
+      $.getJSON( "https://www.nearbycolleges.info/api/search?key=773166e8-4b47-4d0a-9576-4efe98efa148&filter=school.offersPhD:=1,school.offersMasters:=1", function(response){
+      console.log(response);
+  });
+ }
 
-//         "https://nearbycolleges.info/api/search?key=1465d1cd-e9fc-4011-9208-7b2df521e9fc" + offers + "&units=imperial&appid=1a8973d871a7d4763499d364d0a781ed",
 
 
-//     );''
 }) 
